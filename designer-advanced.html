@@ -810,11 +810,15 @@
         }
 
         // Функция для получения номера варианта
+        
+
+        // Функция для сбора всех данных пользователя
+        
+        // Функция для получения номера варианта
         function getVariantNumber() {
             return 9;
         }
-
-        // Функция для сбора всех данных пользователя
+        
         function collectUserData() {
             const variant = getVariantNumber();
             
@@ -949,12 +953,7 @@
         }
 
         // Функция для получения номера варианта
-        function getVariantNumber() {
-            // Определяем номер варианта по URL или другим способом
-            const path = window.location.pathname;
-            const match = path.match(/6250-(d+)/);
-            return match ? parseInt(match[1]) : 1;
-        }
+        
 
         // Функция для сбора данных пользователя
         function collectUserData() {
