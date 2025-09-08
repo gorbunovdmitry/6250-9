@@ -494,7 +494,7 @@
 
         <!-- CTA Button -->
         <button class="cta-button" onclick="selectDesign()" id="orderButton">
-            Заказать за 1290 ₽
+            Заказать за 499 ₽
         </button>
     </div>
 
@@ -512,11 +512,10 @@
             console.log('Current selections:', currentSelections);
         }
         
-        // Update order button price based on thickness
+        // Update order button price - fixed price for 6250-9
         function updateOrderButton() {
             const button = document.getElementById('orderButton');
-            const price = currentSelections.thickness === 'thin' ? '1290' : '990';
-            button.textContent = `Заказать за ${price} ₽`;
+            button.textContent = `Заказать за 499 ₽`;
         }
         
         // Simple sticker update without caching
